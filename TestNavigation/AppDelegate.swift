@@ -13,6 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    // Global data structure
+    var scripture = "19) and the Lord ruler became a very bad man."
+    
+    var activeCanon = Array<Array<String>>()
+    
+    let ot = [["1 Gen 1:1","it's the first verse","0", "And in the beginning"],["2 Gen 2:2","it's the second verse","0", "And in the second beginning"], ["3 Gen 3:3","it's the third verse","0", "And in the third beginning"], ["1 Gen 1:1","it's the first verse","0", "And in the beginning"],["2 Gen 2:2","it's the second verse","0", "And in the second beginning"], ["3 Gen 3:3","it's the third verse","0", "And in the third beginning"], ["1 Gen 1:1","it's the first verse","0", "And in the beginning"],["2 Gen 2:2","it's the second verse","0", "And in the second beginning"], ["3 Gen 3:3","it's the third verse","0", "And in the third beginning"]]
+    
+    let bom = [["1 Nephi 1:1", "it's the first verse", "0", "I Nephi having been born of goodly parents"], [" 2 Nephi 2:2", "it's the second verse", "0", "I Nephi having been born of secondary parents"], ["3 Nephi 3:3", "it's the 3rd verse", "0", "I Nephi having been born of tertiary partents"], ["1 Nephi 1:1", "it's the first verse", "0", "I Nephi having been born of goodly parents"], [" 2 Nephi 2:2", "it's the second verse", "0", "I Nephi having been born of secondary parents"], ["3 Nephi 3:3", "it's the 3rd verse", "0", "I Nephi having been born of tertiary partents"], ["1 Nephi 1:1", "it's the first verse", "0", "I Nephi having been born of goodly parents"], [" 2 Nephi 2:2", "it's the second verse", "0", "I Nephi having been born of secondary parents"], ["3 Nephi 3:3", "it's the 3rd verse", "0", "I Nephi having been born of tertiary partents"]]
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
